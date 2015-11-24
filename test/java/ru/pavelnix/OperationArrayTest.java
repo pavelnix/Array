@@ -1,28 +1,36 @@
 package ru.pavelnix;
 
-import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.*;
 
 /**
- * Created by Administrator on 24.11.2015.
+ * Класс, который тестирует OperationArray
  */
-public class OperationArrayTest extends TestCase {
+public class OperationArrayTest {
     private int[] array = {1, 2};
     private OperationArray operationArray;
 
+    /**
+     * Метод выполняющийся перед каждым тестом
+     *
+     * @throws Exception
+     */
     @Before
-    public void setup() {
+    public void setUp() throws Exception {
         operationArray = new OperationArray(array);
         System.out.println("@Before");
     }
 
+    /**
+     * Тест геттера
+     *
+     * @throws Exception
+     */
     @Test
-    public void testGetArray() {
-        operationArray = new OperationArray(array);
-        int[] array1 = {1, 3};
+    public void testGetArray() throws Exception {
+//        int[] array1 = {1, 3};
         assertArrayEquals(array, operationArray.getArray());
     }
 }
