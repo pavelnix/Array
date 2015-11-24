@@ -6,11 +6,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *  ласс, который тестирует OperationArray
+ *  ласс, который тестирует RemovingRepetitiveSequencesArray
  */
-public class OperationArrayTest {
+public class RemovingRepetitiveSequencesArrayTest {
     private int[] array = {1, 2};
-    private OperationArray operationArray;
+    private RemovingRepetitiveSequencesArray removingRepetitiveSequencesArray;
 
     /**
      * ћетод выполн€ющийс€ перед каждым тестом
@@ -19,7 +19,7 @@ public class OperationArrayTest {
      */
     @Before
     public void setUp() throws Exception {
-        operationArray = new OperationArray(array);
+        removingRepetitiveSequencesArray = new RemovingRepetitiveSequencesArray(array);
         System.out.println("@Before");
     }
 
@@ -31,6 +31,6 @@ public class OperationArrayTest {
     @Test
     public void testGetArray() throws Exception {
 //        int[] array1 = {1, 3};
-        assertArrayEquals(array, operationArray.getArray());
+        assertArrayEquals(array, removingRepetitiveSequencesArray.getArray());
     }
 }

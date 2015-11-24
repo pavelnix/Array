@@ -3,7 +3,7 @@ package ru.pavelnix;
 /**
  * Класс обработки массива
  */
-public class OperationArray {
+public class RemovingRepetitiveSequencesArray {
     /**
      * Сам массив
      */
@@ -14,7 +14,7 @@ public class OperationArray {
      *
      * @param array - массив
      */
-    public OperationArray(int[] array) {
+    public RemovingRepetitiveSequencesArray(int[] array) {
         this.array = array;
     }
 
