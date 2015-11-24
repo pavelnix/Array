@@ -1,27 +1,27 @@
 package ru.pavelnix;
 
 /**
- * Класс обработки массива
+ * РљР»Р°СЃСЃ РѕР±СЂР°Р±РѕС‚РєРё РјР°СЃСЃРёРІР°
  */
 public class RemovingRepetitiveSequencesArray {
     /**
-     * Сам массив
+     * РЎР°Рј РјР°СЃСЃРёРІ
      */
     private int[] array;
 
     /**
-     * Конструктор
+     * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
      *
-     * @param array - массив
+     * @param array - РјР°СЃСЃРёРІ
      */
     public RemovingRepetitiveSequencesArray(int[] array) {
         this.array = array;
     }
 
     /**
-     * Геттер
+     * Р“РµС‚С‚РµСЂ
      *
-     * @return - возвращает массив
+     * @return - РІРѕР·РІСЂР°С‰Р°РµС‚ РјР°СЃСЃРёРІ
      */
     public int[] getArray() {
         return array;

@@ -6,14 +6,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Класс, который тестирует RemovingRepetitiveSequencesArray
+ * РљР»Р°СЃСЃ, РєРѕС‚РѕСЂС‹Р№ С‚РµСЃС‚РёСЂСѓРµС‚ RemovingRepetitiveSequencesArray
  */
 public class RemovingRepetitiveSequencesArrayTest {
     private int[] array = {1, 2};
     private RemovingRepetitiveSequencesArray removingRepetitiveSequencesArray;
 
     /**
-     * Метод выполняющийся перед каждым тестом
+     * РњРµС‚РѕРґ РІС‹РїРѕР»РЅСЏСЋС‰РёР№СЃСЏ РїРµСЂРµРґ РєР°Р¶РґС‹Рј С‚РµСЃС‚РѕРј
      *
      * @throws Exception
      */
@@ -24,7 +24,7 @@ public class RemovingRepetitiveSequencesArrayTest {
     }
 
     /**
-     * Тест геттера
+     * РўРµСЃС‚ РіРµС‚С‚РµСЂР°
      *
      * @throws Exception
      */
