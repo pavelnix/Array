@@ -18,10 +18,6 @@ public class OperationArray {
         this.array = array;
     }
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-
     /**
      * Геттер
      *
