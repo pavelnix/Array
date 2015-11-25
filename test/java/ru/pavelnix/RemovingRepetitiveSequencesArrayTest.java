@@ -9,7 +9,8 @@ import static org.junit.Assert.*;
  * Класс, который тестирует RemovingRepetitiveSequencesArray
  */
 public class RemovingRepetitiveSequencesArrayTest {
-    private int[] array = {1, 2};
+    private int[] array = {1, 2, 2, 2, 3, 3};
+    private int[] array1 = {1};
     private RemovingRepetitiveSequencesArray removingRepetitiveSequencesArray;
 
     /**
@@ -20,7 +21,6 @@ public class RemovingRepetitiveSequencesArrayTest {
     @Before
     public void setUp() throws Exception {
         removingRepetitiveSequencesArray = new RemovingRepetitiveSequencesArray(array);
-        System.out.println("@Before");
     }
 
     /**
@@ -32,5 +32,12 @@ public class RemovingRepetitiveSequencesArrayTest {
     public void testGetArray() throws Exception {
 //        int[] array1 = {1, 3};
         assertArrayEquals(array, removingRepetitiveSequencesArray.getArray());
+    }
+
+    @Test
+    public void testAction() throws Exception {
+        removingRepetitiveSequencesArray.action();
+
+        assertArrayEquals(array1, removingRepetitiveSequencesArray.getArray());
     }
 }
