@@ -68,7 +68,7 @@ public class RemovingRepetitiveSequencesArray {
         int[] tempArray;
         int flag = 1; //флаг записи в новый массив
         int j = 0; //счетчик по массиву новому массиву
-        int sublength = 0; //длина подпоследовательности
+        int sublength = 1; //длина подпоследовательности
 
         for (int i = 0; i < length - 1; i++) {
             if (array[i] != array[i + 1]) {
@@ -76,21 +76,21 @@ public class RemovingRepetitiveSequencesArray {
                 if (flag == 0) {
                     flag = 1;
                 } else {
-                    if (sublength == 1) {
+                    if (sublength == 2) {
                         array[j++] = array[i - 1];
                     }
                     array[j++] = array[i];
                 }
-                sublength = 0;
+                sublength = 1;
             } else {
                 sublength++;
-                if (sublength > 1) {
+                if (sublength > 2) {
                     flag = 0;
                 }
             }
         }
         if (flag == 1) array[j++] = array[length - 1];
-        if (sublength == 1) array[j++] = array[length - 2];
+        if (sublength == 2) array[j++] = array[length - 2];
 
         tempArray = new int[j];
         System.arraycopy(array, 0, tempArray, 0, j);
