@@ -35,15 +35,14 @@ public class RemovingRepetitiveSequencesArrayTest {
      */
     @Test
     public void testGetArray() throws Exception {
-//        int[] array1 = {1, 3};
         assertArrayEquals(array, removingRepetitiveSequencesArray.getArray());
     }
 
     /**
      * Метод, который тестирует метод
-     * removingRepetitiveSequencesArray.removeRepetitiveSequences(),
+     * removeRepetitiveSequences(),
      * который удаляет повторяющую последовательность чисел из массива,
-     * если последовательность больше либо равна 3
+     * если последовательность больше либо равна lengthRepetitiveSequences
      *
      * @throws Exception
      */
