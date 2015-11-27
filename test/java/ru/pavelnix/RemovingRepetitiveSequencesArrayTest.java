@@ -9,9 +9,13 @@ import static org.junit.Assert.*;
  * Класс, который тестирует RemovingRepetitiveSequencesArray
  */
 public class RemovingRepetitiveSequencesArrayTest {
-    private int[] array = {1, 3, 3, 4, 5, 5, 5};
-    private int[] array1 = {1, 4};
-    private int[] array2 = {1, 3, 3, 4};
+    private int[] array = {1, 3, 3, 4, 5, 5};
+    private int[][] expectedArray = {
+            {1, 4},
+            {1, 3, 3, 4, 5, 5},
+            {1, 3, 3, 4, 5, 5}
+    };
+
     private RemovingRepetitiveSequencesArray removingRepetitiveSequencesArray;
 
     /**
@@ -37,20 +41,6 @@ public class RemovingRepetitiveSequencesArrayTest {
 
     /**
      * Метод, который тестирует метод
-     * removingRepetitiveSequencesArray.action(),
-     * который удаляет повторяющую последовательность чисел из массива
-     *
-     * @throws Exception
-     */
-    @Test
-    public void testAction() throws Exception {
-        removingRepetitiveSequencesArray.action();
-
-        assertArrayEquals(array1, removingRepetitiveSequencesArray.getArray());
-    }
-
-    /**
-     * Метод, который тестирует метод
      * removingRepetitiveSequencesArray.actionV2(),
      * который удаляет повторяющую последовательность чисел из массива,
      * если последовательность больше либо равна 3
@@ -59,8 +49,9 @@ public class RemovingRepetitiveSequencesArrayTest {
      */
     @Test
     public void testActionV2() throws Exception {
-        removingRepetitiveSequencesArray.actionV2();
-
-        assertArrayEquals(array2, removingRepetitiveSequencesArray.getArray());
+        int lengthRepetitiveSequences = 2;
+        removingRepetitiveSequencesArray.actionV2(lengthRepetitiveSequences);
+        assertArrayEquals(expectedArray[lengthRepetitiveSequences - 1],
+                removingRepetitiveSequencesArray.getArray());
     }
 }
