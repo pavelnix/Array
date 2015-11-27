@@ -41,16 +41,16 @@ public class RemovingRepetitiveSequencesArrayTest {
 
     /**
      * Метод, который тестирует метод
-     * removingRepetitiveSequencesArray.actionV2(),
+     * removingRepetitiveSequencesArray.removeRepetitiveSequences(),
      * который удаляет повторяющую последовательность чисел из массива,
      * если последовательность больше либо равна 3
      *
      * @throws Exception
      */
     @Test
-    public void testActionV2() throws Exception {
+    public void testRemoveRepetitiveSequences() throws Exception {
         int lengthRepetitiveSequences = 2;
-        removingRepetitiveSequencesArray.actionV2(lengthRepetitiveSequences);
+        removingRepetitiveSequencesArray.removeRepetitiveSequences(lengthRepetitiveSequences);
         assertArrayEquals(expectedArray[lengthRepetitiveSequences - 1],
                 removingRepetitiveSequencesArray.getArray());
     }

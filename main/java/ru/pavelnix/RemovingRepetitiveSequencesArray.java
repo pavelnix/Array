@@ -40,7 +40,7 @@ public class RemovingRepetitiveSequencesArray {
      *
      * @param lengthRepetitiveSequences - длина последовательности
      */
-    public void actionV2(int lengthRepetitiveSequences) {
+    public void removeRepetitiveSequences(int lengthRepetitiveSequences) {
         int[] tempArray;
         int flag = 1; //флаг записи в новый массив
         int j = 0; //счетчик по новому массиву
