@@ -1,5 +1,6 @@
 package ru.pavelnix;
 
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,6 +28,7 @@ public class RemovingRepetitiveSequencesArrayTest {
     public void setUp() throws Exception {
         removingRepetitiveSequencesArray = new RemovingRepetitiveSequencesArray(array);
     }
+
 
     /**
      * Тест геттера
